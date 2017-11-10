@@ -36,7 +36,7 @@ class Home extends CI_Controller {
         $data['age_year']     = $this->input->post('age_year');
         $data['status']       = '2';
         $data['password']     = md5($this->input->post('password'));
-        $data['re_password']  = md5($this->input->post('re_password'));
+        $re_password          = md5($this->input->post('re_password'));
 
         $img_field = array('image');
         foreach ($img_field as $v) {
@@ -63,7 +63,7 @@ class Home extends CI_Controller {
         $currYear   = $expl['2'];
         $currMonth  = $expl['1'];
 
-        $userYear   = $this->input->post('age_Year');
+        $userYear   = $this->input->post('age_year');
         $dbMonth    = $this->input->post('age_month');
 
         if ($dbMonth == 'January'):
@@ -119,7 +119,7 @@ class Home extends CI_Controller {
         	$this->session->set_flashdata('msggg', 'opps ! Mobile Number already exists ');
         redirect('home');
         }
-        elseif ($data['password'] != $data['re_password']) {
+        elseif ($data['password'] != $re_password) {
             $this->session->set_flashdata('err', 'opps ! Password did not match ');
         redirect('home');
         }

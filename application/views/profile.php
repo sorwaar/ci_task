@@ -21,6 +21,8 @@
         <th>Name</th>
         <th>Email</th>
         <th>Mobile</th>
+        <th>Age</th>
+
       </tr>
     </thead>
     <tbody>
@@ -29,6 +31,7 @@
         <td><?php echo $user->name  ?></td>
         <td><?php echo $user->email  ?></td>
         <td><?php echo $user->mobile ?></td>
+        <td><?php echo $user->current_age ?></td>
       </tr>
     </tbody>
   </table>
