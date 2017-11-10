@@ -1,0 +1,21 @@
+.middle-border {
+    min-height: 300px;
+    margin-top: 170px;
+    border-right: 1px solid black;
+    border-right: 1px solid black;
+
+}
+.pt-10{
+    padding-top: 10%
+}
+
+.pt-5{
+    padding-top: 5%
+}
+
+.left{
+    padding-left: 4%;
+}
+.right{
+    float: right!important;
+}
