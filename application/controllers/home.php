@@ -132,7 +132,7 @@ class Home extends CI_Controller {
         $config['smtp_port']    = '465';
         $config['smtp_timeout'] = '7';
         $config['smtp_user']    = 'sorwar3226@gmail.com';
-        $config['smtp_pass']    = 'x231676x';
+        $config['smtp_pass']    = 'test12345678';
         $config['charset']      = 'utf-8';
         $config['newline']      = "\r\n";
         $config['mailtype']     = 'html'; 
